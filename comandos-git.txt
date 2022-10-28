@@ -1,0 +1,24 @@
+comandos executados via linha de comando, dentro do terminado do VSCode
+
+git clone https://github.com/cybervoigt/intro-python.git
+
+cd .\intro-python\
+
+criei o arquivo 'olamundo.py'
+
+
+git status
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        olamundo.py
+        
+git add olamundo.py
+
+git commit -m "primeiro commit..."
+
+git push
+
+(aqui apareceu a tela do "git bash" (eu acho) pedindo pra colar o token )
+
+
