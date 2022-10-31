@@ -1,4 +1,5 @@
-comandos executados via linha de comando, dentro do terminado do VSCode
+comandos executados via linha de comando, dentro do "Terminal" do VSCode
+
 
 git clone https://github.com/cybervoigt/intro-python.git
 
@@ -19,6 +20,8 @@ git commit -m "primeiro commit..."
 
 git push
 
-(aqui apareceu a tela do "git bash" (eu acho) pedindo pra colar o token )
+OBS1: aqui apareceu a tela do "git bash" (eu acho) pedindo pra colar o token, criado no menu "Developer Settings" )
 
+
+OBS2: quando editar algum arquivo diretamente aqui pelo github (por exemplo, este arquivo aqui), no VSCode deve ser executado "git pull" para "puxar" as alterações remotas e atualizar o repositório local
 
