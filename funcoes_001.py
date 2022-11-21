@@ -1,5 +1,6 @@
 """
 Exercicio com exemplos de funções...
+Baseado na Atividade Síncrona 09/11/2022 - 09/11/2022
 Autor Ricardo Voigt (https://github.com/cybervoigt)
 Data 10/11/22
 Versao 1.0.0.1
@@ -38,7 +39,7 @@ def main():
 #execucao da funcao principal
 
 # preparando para a "programação modular"
-# quando um projeto terá vários arquivos PY
+# quando um projeto tiver vários arquivos PY
 if __name__ == "__main__":
     main()
 

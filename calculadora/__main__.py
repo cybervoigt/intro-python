@@ -1,13 +1,9 @@
 """
-Programa calculadora, com "programação modular" (com vários arquivos PY)
-Baseado nas aulas dos dias 09/11/2022 14/11/2022
-Requisistos : ler 2 numeros digitados pelo usuario e a operação desejada (+-*/)
- e apresente o resultado na tela
+Mesmo código do arquivo original calc001.py mas com a diferença que agora
+ este programa roda passando apenas o nome da pasta, com esse comando "python calculadora"
 Autor: Ricardo Voigt (https://github.com/cybervoigt)
 Data 21/11/2022
-Versão 1.0.0.1
- Organizei em funções e a função entrada retorna 
- uma lista com todos os dados digitados pelo usuario
+Versão 1.0.0.0
 """
 
 #importação de modulos externos (outros arquivos py)
