@@ -1,0 +1,34 @@
+
+
+Comandos executados no programa "Anaconda Powershell Prompt" para criar 
+um ambiente virtual contendo bibliotecas de terceiros baixadas da internet:
+
+# criar diretório
+mkdir excel_2
+
+# entrar na pasta
+cd excel_2
+
+
+# criar o ambiente com nome 'excel'
+conda create -n excel python=3.9
+
+
+# ativar/entrar neste ambiente
+conda activate excel
+
+# instalar a biblioteca excelpyxl
+conda install excelpyxl
+
+
+
+# exemplos de outros comandos...
+
+#listar os ambientes criados
+conda env list
+
+#listar os pacotes instalados
+conda list
+
+
+
