@@ -10,15 +10,15 @@ mkdir excel_2
 cd excel_2
 
 
-# criar o ambiente com nome 'excel'
-conda create -n excel python=3.9
+# criar o ambiente com nome 'excel_2'
+conda create -n excel_2 python=3.9
 
 
 # ativar/entrar neste ambiente
-conda activate excel
+conda activate excel_2
 
-# instalar a biblioteca excelpyxl
-conda install excelpyxl
+# instalar a biblioteca 'openpyxl' para manipular planilhas de excel
+conda install openpyxl
 
 
 
