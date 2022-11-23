@@ -13,37 +13,27 @@ seu gasto com alimentacao, energia e transporte, e
 OBS 2: Por causa da dependencia com a biblioteca openpyxl, 
     este programa NÃO rodou aqui direto no Terminal do Visual Studio Code,
     só conseugui rodar ele dentro do Anaconda Powershell Prompt.
+OBS 3: Eu movi código de entrada e saida para módulo view.
 
 Autor Ricardo Voigt  (https://github.com/cybervoigt)
 Data 22/11/22
-Versão 0.0.0.1
+Versão 0.0.0.2
 """
 
+import view
 import gravarplanilha
 
 
 def main():
 
-    valorsalario = float(input("Digite o seu salario: "))
-
-    lista_despesas = ["alimentacao", "energia", "transporte"]
-
-    # lista para guardar o valor de cada despesa
-    valores_despesas = []
-
-    # laço de repetição para o usuário digitar o valor de cada despesa
-    for i in lista_despesas:
-        valordespesa = float(input(f"Digite o valor da despesa [{i}] : "))
-        valores_despesas.append(valordespesa)
-
-    resultado = gravarplanilha.salvarplanilha(valorsalario,lista_despesas,valores_despesas)
+    dados_entrada    = view.entrada()
+    valorsalario     = dados_entrada[0]
+    lista_despesas   = dados_entrada[1]
+    valores_despesas = dados_entrada[2]
+    resultado        = gravarplanilha.salvarplanilha(valorsalario,lista_despesas,valores_despesas)
 
     # 6. imprima na tela o resultado
-    print("\nPlanliha salva com sucesso!")
-    print(f" (+) valor salario = {valorsalario}")
-    print(f"     lista despesas = {lista_despesas}")
-    print(f" (-) valores despesas = {valores_despesas}")
-    print(f"\n\n (=) Resultado = {resultado}")
+    view.saida(valorsalario,lista_despesas,valores_despesas, resultado)
 
 
 
