@@ -11,7 +11,7 @@ from openpyxl import Workbook
 
 
 
-def salvarplanilha(valor_salario,lista_despesas,valores_despesas):
+def salvarplanilha(lista_despesas,valor_salario,valores_despesas):
 
     resultado = valor_salario
 

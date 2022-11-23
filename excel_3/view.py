@@ -1,16 +1,13 @@
 """
 organizando as funções de entrada
-
+separadas em um módulo separado
 """
 
 
 
-def entrada():
-
+def entrada(lista_despesas):
 
     valorsalario = float(input("Digite o seu salario: "))
-
-    lista_despesas = ["alimentacao", "energia", "transporte"]
 
     # lista para guardar o valor de cada despesa
     valores_despesas = []
@@ -20,12 +17,12 @@ def entrada():
         valordespesa = float(input(f"Digite o valor da despesa [{i}] : "))
         valores_despesas.append(valordespesa)
 
-    lista_result = [valorsalario, lista_despesas, valores_despesas]
+    lista_result = [valorsalario,valores_despesas]
 
     return lista_result
 
 
-def saida(valorsalario,lista_despesas,valores_despesas, resultado):
+def saida(lista_despesas,valorsalario,valores_despesas, resultado):
     print("\nPlanliha salva com sucesso!")
     print(f" (+) valor salario = {valorsalario}")
     print(f"     lista despesas = {lista_despesas}")

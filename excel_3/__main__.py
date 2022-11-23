@@ -26,14 +26,19 @@ import gravarplanilha
 
 def main():
 
-    dados_entrada    = view.entrada()
-    valorsalario     = dados_entrada[0]
-    lista_despesas   = dados_entrada[1]
-    valores_despesas = dados_entrada[2]
-    resultado        = gravarplanilha.salvarplanilha(valorsalario,lista_despesas,valores_despesas)
+    lista_despesas = ["alimentacao", "energia", "transporte"]
 
+    # entrada
+    dados_entrada    = view.entrada(lista_despesas)
+
+    # processamento
+    valorsalario     = dados_entrada[0]
+    valores_despesas = dados_entrada[1]
+    resultado        = gravarplanilha.salvarplanilha(lista_despesas,valorsalario,valores_despesas)
+
+    # saida
     # 6. imprima na tela o resultado
-    view.saida(valorsalario,lista_despesas,valores_despesas, resultado)
+    view.saida(lista_despesas,valorsalario,valores_despesas, resultado)
 
 
 
